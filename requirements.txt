@@ -36,10 +36,7 @@ tensorflow-estimator==2.9.0
 threadpoolctl==3.1.0
 tokenizers==0.12.1
 toml==0.10.2
--f https://download.pytorch.org/whl/torch_stable.html 
-torch==1.4.0+cpu 
--f https://download.pytorch.org/whl/torch_stable.html
-torchvision==0.5.0+cpu
+torch==1.3.1+cpu
 tqdm==4.64.0
 transformers==4.19.2
 typing-extensions==4.1.1
