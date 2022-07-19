@@ -67,17 +67,17 @@ def compare():
     
     return render_template('index.html')
 
-@app.route('/progress')
-def progress():
-	def generate():
-		x = 0
-		while x <= 100:
-			yield "data:" + str(x) + "\n\n"
-			x = x + 4
-			time.sleep(0.5)
+# @app.route('/progress')
+# def progress():
+# 	def generate():
+# 		x = 0
+# 		while x <= 100:
+# 			yield "data:" + str(x) + "\n\n"
+# 			x = x + 4
+# 			time.sleep(0.5)
 
-	#return redirect(url_for('complete')
-	return Response(generate(), mimetype= 'text/event-stream')
+# 	#return redirect(url_for('complete')
+# 	return Response(generate(), mimetype= 'text/event-stream')
 
 if __name__ == "__main__":
 	app.run()
